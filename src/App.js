@@ -1,12 +1,13 @@
+import './App.css';
 import './index.css';
 import { Home } from "./containers"
 
 function App() {
   return (
-    <div className="App">
-      <h1>App.js</h1>
+    <div className="app">
       <Home />
     </div>
+
   );
 }
 
