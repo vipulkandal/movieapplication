@@ -1,8 +1,18 @@
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: #5d0d78;
+  padding: 10px 0px;
+  color: var(--color-white);
 }
 
 .header__container img {
-  height: 50px;
+  height: 60px;
+}
+
+.header__container span {
+  padding: 0 20px;
+  font-family: fantasy;
+  font-size: 40px;
 }

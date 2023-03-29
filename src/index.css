@@ -13,5 +13,8 @@ code {
 }
 
 :root {
-  --color-background: #65635d;
+  /* Code for colors */
+  --color-background: #d0cbbc;
+  --color-white: #ffffff;
+  --content-header: #5d0d78;
 }
