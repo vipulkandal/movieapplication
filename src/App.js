@@ -11,14 +11,14 @@ function App() {
       <Header />
       <Router>
         <div className="app">
-          {/* <Container> */}
-          <Switch>
-            <Route path='/' exact component={Trending} />
-            <Route path='/movies' component={Movies} />
-            <Route path='/tvshows' component={TVShows} />
-            <Route path='/search' component={Search} />
-          </Switch>
-          {/* </Container> */}
+          <Container>
+            <Switch>
+              <Route path='/' exact component={Trending} />
+              <Route path='/movies' component={Movies} />
+              <Route path='/tvshows' component={TVShows} />
+              <Route path='/search' component={Search} />
+            </Switch>
+          </Container>
         </div>
       </Router>
       <SimpleBottomNavigation />
