@@ -6,33 +6,26 @@ import WhatshotIcon from '@mui/icons-material/Whatshot';
 import TheatersIcon from '@mui/icons-material/Theaters';
 import TvIcon from '@mui/icons-material/Tv';
 import SearchIcon from '@mui/icons-material/Search';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
 export default function SimpleBottomNavigation() {
-    const [value, setValue] = useState(0);
-    const history = useHistory();
+    const [value, setValue] = React.useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
-        if (value === 0) {
-            history.push("/");
-        } else if (value === 1) {
-            history.push("/movies");
-        } else if (value === 2) {
-            history.push("/series");
-        } else if (value === 3) {
-            history.push("/search");
-        }
-    }, [value, history]);
+        if (value === 0) navigate("/");
+        else if (value === 1) navigate("/movies");
+        else if (value === 2) navigate("/series");
+        else if (value === 3) navigate("/search");
+    }, [value, navigate]);
 
     return (
         <Box>
             <BottomNavigation
                 showLabels
                 value={value}
-                onChange={(event, newValue) => {
-                    setValue(newValue);
-                }}
+                onChange={(event, newValue) => setValue(newValue)}
                 style={{ background: 'var(--content-header)', position: 'fixed', bottom: '0', width: '100%' }}
             >
                 <BottomNavigationAction label="Trending" icon={<WhatshotIcon />} style={{ color: 'var(--color-white)' }} />
