@@ -6,14 +6,18 @@ import { SingleContent } from "../../components";
 function Trending() {
   const [content, setContent] = useState([]);
 
+  // Better solution is to have .env file
+  const REACT_APP_API_KEY = "2a8d5de7377efc1ff5a7bafcd4681b62";
+
   useEffect(() => {
     fetchTrending();
+    console.log("process.env.REACT_APP_API_KEY", process.env.REACT_APP_API_KEY);
   }, []);
 
   const fetchTrending = async () => {
     await axios
       .get(
-        `https://api.themoviedb.org/3/trending/all/day?api_key=2a8d5de7377efc1ff5a7bafcd4681b62`
+        `https://api.themoviedb.org/3/trending/all/day?api_key=${REACT_APP_API_KEY}`
         // `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}`
       )
       .then((res) => setContent(res.data.results))
@@ -21,7 +25,7 @@ function Trending() {
   };
   return (
     <div>
-      <h1>trending</h1>
+      <span className="pageTitle">Trending</span>
       <div className="trending">
         {content?.length > 0 &&
           content.map((item) => {

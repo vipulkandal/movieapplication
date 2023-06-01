@@ -16,5 +16,6 @@ code {
   /* Code for colors */
   --color-background: #d0cbbc;
   --color-white: #ffffff;
+  --color-black: #000000;
   --content-header: #5d0d78;
 }
