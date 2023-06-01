@@ -26,7 +26,7 @@ export default function SimpleBottomNavigation() {
                 showLabels
                 value={value}
                 onChange={(event, newValue) => setValue(newValue)}
-                style={{ background: 'var(--content-header)',/*position: 'fixed',*/ bottom: '0', width: '100%' }}
+                style={{ background: 'var(--content-header)', position: 'fixed', bottom: '0', width: '100%' }}
             >
                 <BottomNavigationAction label="Trending" icon={<WhatshotIcon />} style={{ color: 'var(--color-white)' }} />
                 <BottomNavigationAction label="Movies" icon={<TheatersIcon />} style={{ color: 'var(--color-white)' }} />

@@ -26,7 +26,7 @@ function Trending() {
       .catch((err) => console.log("trending_err", err));
   };
   return (
-    <div>
+    <div classname="trendingWrapper">
       <span className="pageTitle">Trending</span>
       <div className="trending">
         {content?.length > 0 &&

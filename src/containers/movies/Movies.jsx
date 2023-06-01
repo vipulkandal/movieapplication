@@ -32,7 +32,7 @@ function Movies() {
         selectedGenres={selectedGenres}
         setSelectedGenres={setSelectedGenres}
         genres={genres}
-        setGenres={setSelectedGenres}
+        setGenres={setGenres}
         setPage={setPage}
       />
       <div className="movies content">
