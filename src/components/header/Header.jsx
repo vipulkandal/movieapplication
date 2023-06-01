@@ -4,18 +4,9 @@ import movieIcon from "../../assets/movieIcon.png";
 
 const Header = () => {
   return (
-    <>
-      {/* <div className="header__container">
-        <img src={movieIcon} alt="sdfgsd"></img>
-        <span>Movies and TV Shows</span>
-      </div> */}
-
-      <nav className="header__container">
-        <img src={movieIcon} alt="sdfgsd"></img>
-        <span>Movies and TV Shows</span>
-        <img src={movieIcon} alt="sdfgsd"></img>
-      </nav>
-    </>
+    <div onClick={(e) => window.scroll(0, 0)} className="header__container">
+      Popcorn Time
+    </div>
   );
 };
 

@@ -2,3 +2,10 @@
   min-height: 100vh;
   background-color: var(--color-background);
 }
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 75px;
+}

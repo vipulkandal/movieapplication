@@ -1,4 +1,4 @@
-// import { Badge } from "@material-ui/core";
+import { Badge } from "@material-ui/core";
 import { img_300, unavailable } from "../../config/config";
 import "./singleContent.css";
 // import ContentModal from "../ContentModal/ContentModal";
@@ -13,11 +13,12 @@ const SingleContent = ({
 }) => {
   return (
     <>
-      {/* <Badge
-        badgeContent={vote_average}
-        color={vote_average > 6 ? "primary" : "secondary"}
-      /> */}
       <div className="media">
+        <Badge
+          badgeContent={vote_average.toFixed(1)}
+          color={vote_average > 6 ? "primary" : "secondary"}
+          overlap="rectangular"
+        />
         <img
           className="poster"
           src={poster ? `${img_300}${poster}` : unavailable}

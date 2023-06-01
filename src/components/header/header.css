@@ -1,10 +1,24 @@
 .header__container {
+  width: 100%;
+  cursor: pointer;
+  position: fixed;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: #5d0d78;
-  padding: 10px 0px;
+  text-transform: uppercase;
+  background-color: var(--content-header);
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vw;
+  padding-bottom: 15px;
+  box-shadow: 0px 1px 5px black;
   color: var(--color-white);
+  z-index: 100;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding-top: 15px;
+    font-size: 6.4vw;
+  }
 }
 
 .header__container img {

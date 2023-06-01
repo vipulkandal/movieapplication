@@ -13,3 +13,6 @@ export const unavailableLandscape =
 // For Carousel
 export const noPicture =
     "https://upload.wikimedia.org/wikipedia/en/6/60/No_Picture.jpg";
+
+// APIKey
+export const REACT_APP_API_KEY = "2a8d5de7377efc1ff5a7bafcd4681b62";
