@@ -27,7 +27,7 @@ function CustomPagination({ setPage, numberOfPages = 10 }) {
       <ThemeProvider theme={lightTheme}>
         <Pagination
           count={numberOfPages}
-          onChange={(e) => handlePageChange(e.target.textContent)}
+          onChange={(e) => handlePageChange(e.target.textContent)} // e.target.textContent has the page number selected
           hideNextButton
           hidePrevButton
           color="primary"

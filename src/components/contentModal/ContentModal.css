@@ -1,0 +1,22 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 5px;
+  margin: 5px 0;
+  background-color: #ac36d4;
+  border-radius: 10px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.media:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+@media (max-width: 550px) {
+  .media {
+    width: 46%;
+  }
+}

@@ -1,0 +1,10 @@
+.content {
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.search__data-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
